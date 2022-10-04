@@ -1,0 +1,71 @@
+body {
+    font-family: 'Georgia', 'Times', 'Times New Roman', 'serif';
+    margin: 8px auto;
+    width: 100vw;
+}
+
+form {
+    background: #afe0d9;
+    padding: 15px;
+    border-radius: 7%;
+    min-width: 20vw;
+    width: 25vw
+}
+
+label {
+    display: block;
+}
+
+.form-item {
+    margin-bottom: 7px;
+}
+
+.form-item input {
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    padding: 7px;
+    width: 90%;
+    margin-top: 5px;
+}
+
+button {
+    border: 2px solid #4db6ac;
+    border-radius: 4px;
+    background-color: #4db6ac;
+    color: #fff;
+    font-family: inherit;
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+    font-weight: bold;
+}
+#errorSpan {
+    color: red;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td {
+    border: 0.7px solid;
+    text-align: center;
+    padding: 10px
+}
+
+#colorInput {
+    width: 250px;
+    height: 35px;
+    margin-bottom: 10px;
+}
+
+.container {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+#form-data {
+    line-height: 30px;
+}

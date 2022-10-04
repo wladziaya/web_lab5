@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="лабораторна, ІВ-91, Яременко" />
+    <meta name="description" content="Лабораторна робота №1, виконала Яременко Влада" />
+    <title>Яременко Влада Дмитрівна, ІВ-91, ЛР №1, Варіант 27</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container" style="margin-bottom: 50px;">
+        <form onsubmit="submitFunc(event)"  action="result.html" target="_blank">
+            <div class="form-item">
+                <label for="name">ПІБ</label>
+                <input type="text" name="ПІБ" id="name" placeholder="Іванов І.І." onkeyup="isName(this)"
+                    required>
+            </div>
+            <div class="form-item">
+                <label for="group">Варіант</label>
+                <input type="number" name="Група" id="variant" placeholder="1" min="1" onkeyup="isVariant(this)"
+                    required>
+            </div>
+            <div class="form-item">
+                <label for="phone">Телефон</label>
+                <input type="tel" name="Телефон" id="phone" placeholder="(123)-456-78-90" onkeyup="isPhone(this)"
+                    required>
+            </div>
+            <div class="form-item">
+                <label for="email">Факультет</label>
+                <input type="text" name="Факультет" id="facult" placeholder="ФІОТ" onkeyup="isFacult(this)"
+                    required>
+            </div>
+            <div class="form-item">
+                <label for="address">Адресa</label>
+                <input type="text" name="Адресa" id="address" placeholder="м. Мостиська" onkeyup="isAddres(this)"
+                    required>
+            </div>
+            <div class="form-item">
+                <button type="submit">Підтвердити</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="container">
+        <input type="color" id="colorInput">
+        <table>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+                <td>10</td>
+                <td>11</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>14</td>
+                <td>15</td>
+                <td>16</td>
+                <td>17</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td>19</td>
+                <td>20</td>
+                <td>21</td>
+                <td>22</td>
+                <td>23</td>
+                <td>24</td>
+            </tr>
+            <tr>
+                <td>25</td>
+                <td>26</td>
+                <td onmouseover="randomColor(this)" onclick="changeInputColor(this)" ondblclick="changeRowColor(this)">
+                    27
+                </td>
+                <td>28</td>
+                <td>29</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td>31</td>
+                <td>32</td>
+                <td>33</td>
+                <td>34</td>
+                <td>35</td>
+                <td>36</td>
+            </tr>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
